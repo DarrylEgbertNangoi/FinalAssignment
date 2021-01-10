@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drinks"
+    android:background="@drawable/bg1edited">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="292dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text=" Drinks"
+            android:textColor="@color/Hitam"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textAirMineral"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Air Mineral\n Rp 4000"
+            android:textColor="@color/Hitam"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnAirMineral"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textJApel"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Jus Apel\n Rp 8000"
+            android:textColor="@color/Hitam"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnJApel"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textAirMineral"
+            app:layout_constraintTop_toBottomOf="@+id/textAirMineral" />
+
+        <TextView
+            android:id="@+id/textJMangga"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Jus Mangga\n Rp 12000"
+            android:textColor="@color/Hitam"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnJMangga"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textJApel"
+            app:layout_constraintTop_toBottomOf="@+id/textJApel" />
+
+        <TextView
+            android:id="@+id/textJAlpukat"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Jus Alpukat\n Rp 15000"
+            android:textColor="@color/Hitam"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnJAlpukat"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textJMangga"
+            app:layout_constraintTop_toBottomOf="@+id/textJMangga" />
+        <Button
+            android:id="@+id/btnAirMineral"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:fontFamily="cursive"
+            android:onClick="onClickToOrderListAirMineral"
+            android:text="Order"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <Button
+            android:id="@+id/btnJApel"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:fontFamily="cursive"
+            android:onClick="onClickToOrderListQJApel"
+            android:text="Order"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnAirMineral"
+            app:layout_constraintTop_toBottomOf="@+id/btnAirMineral" />
+
+        <Button
+            android:id="@+id/btnJMangga"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:fontFamily="cursive"
+            android:onClick="onClickToOrderListQJMangga"
+            android:text="Order"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnJApel"
+            app:layout_constraintTop_toBottomOf="@+id/btnJApel" />
+
+        <Button
+            android:id="@+id/btnJAlpukat"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:fontFamily="cursive"
+            android:onClick="onClickToOrderListQJAlpukat"
+            android:text="Order"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnJMangga"
+            app:layout_constraintTop_toBottomOf="@+id/btnJMangga" />
+
+        <Button
+            android:id="@+id/btnMyOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:onClick="onClickMyOrder"
+            android:text="My Order"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textJAlpukat" />
+
+</android.support.constraint.ConstraintLayout>
